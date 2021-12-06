@@ -6,6 +6,8 @@
 
 
 
+Tehtävät löytyvät opettajamme [Tero Karvisen sivuilta](https://terokarvinen.com/2021/configuration-management-systems-palvelinten-hallinta-ict4tn022-2021-autumn/#h6-ikkuna-ja-projekti)
+
 
 ## a) Kerää tietoa Windowsista Saltilla.
 
