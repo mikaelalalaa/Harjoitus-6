@@ -7,9 +7,22 @@ Tehtävät löytyvät opettajamme [Tero Karvisen sivuilta](https://terokarvinen.
 
 [Control Windows with Salt](https://terokarvinen.com/2018/control-windows-with-salt/)
 
+* Salt masterilla pitää olla sama tai uudempi versio, kuin minionilla.
+*  windowsin Software Repositories voi sallia komennoilla:
+ ```
+sudo mkdir /srv/salt/win
+sudo chown root.salt /srv/salt/win
+sudo chmod ug+rwx /srv/salt/win
+ ```
+ * Käynnissä olevien työtten statuksen voi katsoa komennolla `sudo salt-run jobs.active`
+
 
 [Configure Windows and Linux with Single Salt Module](https://terokarvinen.com/2018/configure-windows-and-linux-with-salt-jinja-if-else-and-grains/)
 
+* jos windosin ja linuxin hakemistot ovat erillaisia, niin voi luoda salt moduulin joka toimii monessa käyttöjärjestelmässä. 
+  * laitetaan ehdollinen lokiikka sls tiedoston alkuun
+  * katsotaan YAML 
+  * jos linuxilla ja windowsilla ei ole mitään yhtistä, niin kirjoitetaan erilliset moduulit
 
 [Windows Package Manager](https://docs.saltproject.io/en/latest/topics/windows/windows-package-manager.html)
 
