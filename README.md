@@ -1,12 +1,18 @@
 # Harjoitus-6
 
 
+Tehtävät löytyvät opettajamme [Tero Karvisen sivuilta](https://terokarvinen.com/2021/configuration-management-systems-palvelinten-hallinta-ict4tn022-2021-autumn/#h6-ikkuna-ja-projekti)
 
 ## z) Lue ja tiivistä 
 
+[Control Windows with Salt](https://terokarvinen.com/2018/control-windows-with-salt/)
 
 
-Tehtävät löytyvät opettajamme [Tero Karvisen sivuilta](https://terokarvinen.com/2021/configuration-management-systems-palvelinten-hallinta-ict4tn022-2021-autumn/#h6-ikkuna-ja-projekti)
+[Configure Windows and Linux with Single Salt Module](https://terokarvinen.com/2018/configure-windows-and-linux-with-salt-jinja-if-else-and-grains/)
+
+
+[Windows Package Manager](https://docs.saltproject.io/en/latest/topics/windows/windows-package-manager.html)
+
 
 
 ## a) Kerää tietoa Windowsista Saltilla.
