@@ -43,13 +43,43 @@ Hieman selvennystä mitä tuloksena tuli
 
 ## b) Asenna ohjelmia Windowsille Saltilla.
 
+Loin hakemiston `srv/salt/winn` johon tein `init.sls` tiedoston. 
+
+Tiedostoon lisäsin alla olevan tekstin
+ 
+```
+git:
+  pkg.installed
+
+micro:
+  pkg.installed
+```
+Tämän jälkeen ajoin komennon `sudo salt 'winn' state.apply winn`
+
+Kuvassa näkyy että git saatiin asennettua mutta micro asennuksen kanssa tuli ongelmia.
+Micron pakettia ei läydetty joten sen takia se ei asentunut
+
 ![image](https://user-images.githubusercontent.com/93308960/144851126-1043e979-4199-4119-b164-fac40da6b75e.png)
+
+Päätin sitten muokata init tiedostoa ja vaihtaa micro sovelluksen tilalle vlc sovellus.
+
+```
+git:
+  pkg.installed
+
+vlc:
+  pkg.installed
+```
+Sitten ajoin `state.apply` komennon uudestaan.
+
+Kuten alla olevasta kuvasta näkyy vlc asennus onnisui, koska git oli asennettu jo aikasemmin nii muita muutoksia ei tullut.
 
 ![image](https://user-images.githubusercontent.com/93308960/144857886-c98349e8-fe63-47be-9e0d-e2bb51379906.png)
 
 
-![image](https://user-images.githubusercontent.com/93308960/144862133-4e6d2ebb-a833-43c7-9bea-c8c6f07861c7.png)
+Kuvasta vielä nätkyy windowsin Program tiedostosa että sovellukset asentui.
 
+![image](https://user-images.githubusercontent.com/93308960/144862133-4e6d2ebb-a833-43c7-9bea-c8c6f07861c7.png)
 
 
 ## c) Draft zero.
