@@ -173,3 +173,16 @@ Mutta kuten alla olevasta kuvasta näkyy pystyn näkemään selaimesta sivuni
 ## d) Tee omalle miniprojektille weppisivu
 
 Linnki https://github.com/mikaelalalaa/Harjoitus-7
+
+
+## lähteet 
+
+https://terokarvinen.com/2021/configuration-management-systems-palvelinten-hallinta-ict4tn022-2021-autumn/#h6-ikkuna-ja-projekti
+
+https://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/
+
+https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/
+
+https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/
+
+https://docs.saltproject.io/en/latest/topics/windows/windows-package-manager.html
