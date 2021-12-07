@@ -101,18 +101,36 @@ Tämä ei ole vielä virallinen projekti päätös mutta backup. Eli olen tekem�
 
 Aloitin tekemällä uuden debian-bullseye virtuaalikoneen ja siihen asensin salt master & minion. 
 
+Komento oli:
+```
+sudo apt-get install salt-minion
+&
+sudo apt-get install salt-master
+```
+Tämän jälkeen katsoin masterin ip-osoitteen ja laitoin tiedon /etc/salt/minion hakemistoon. Sitten käynnistin minionin uudelleen komennolla `sudo systemctl restart salt-minion`, katsoin oliko avain pyytö tullut masterille komennolla `sudo salt-key`. Oli tullut ja hyväksyin sen komennolla `sudo salt-key -A`
 
 ![image](https://user-images.githubusercontent.com/93308960/145073179-507690d1-0e4e-472a-89a0-720d8f8b4c75.png)
 
+Testasin minion-master yhteyttä komennolla `sudo salt '*' test.ping`  ja yhteys oli onnistunut
 
 ![image](https://user-images.githubusercontent.com/93308960/145073234-08c90899-a67e-48e0-9684-c31bed3e3e39.png)
 
+Yhteyden luomisen jälkeen loin uuden hakemiston `srv/salt/allaps` ja tein tiedoston init.sls. Sinne kirjoitin sovellukset jotka tarvitsen eli:
+
+* apache2
+* openssh-server
+* net-tools
+* tree
 
 ![image](https://user-images.githubusercontent.com/93308960/145077502-2dee1508-c5d1-4b35-91e7-cec7417ab598.png)
 
-
+Tallensin tiedoston ja ajoin komennon `sudo salt '*' state.apply allaps`, kuten alla olevasta kuvasta näkyy kaikki asennettiin onnistuneestin
 
 ![image](https://user-images.githubusercontent.com/93308960/145077291-625c37a4-0c54-4f9d-9104-83b7c1e827ae.png)
+
+Sitten loin uuden hakemiston `srv/salt/apache2`
+
+![image](https://user-images.githubusercontent.com/93308960/145083899-86aeb9bc-c4f8-438c-b0ee-286a6ecca71c.png)
 
 
 ![image](https://user-images.githubusercontent.com/93308960/145079774-a0af2ddf-e9e4-4efc-90ac-a756b190d81d.png)
@@ -127,4 +145,4 @@ Aloitin tekemällä uuden debian-bullseye virtuaalikoneen ja siihen asensin salt
 
 ## d) Tee omalle miniprojektille weppisivu
 
-
+Linnki https://github.com/mikaelalalaa/Harjoitus-7
