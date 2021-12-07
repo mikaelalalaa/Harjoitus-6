@@ -97,6 +97,32 @@ Kuvasta vielä nätkyy windowsin Program tiedostosa että sovellukset asentui.
 
 ## c) Draft zero.
 
+Tämä ei ole vielä virallinen projekti päätös mutta backup. Eli olen tekemässä apache2 pohjalta nettisivua, käytän infraa koodina hyödyksi sovellusten lataamiseen ja konfigurointiin. Otan muutoksen käyttöön saltin avulla.
+
+Aloitin tekemällä uuden debian-bullseye virtuaalikoneen ja siihen asensin salt master & minion. 
+
+
+![image](https://user-images.githubusercontent.com/93308960/145073179-507690d1-0e4e-472a-89a0-720d8f8b4c75.png)
+
+
+![image](https://user-images.githubusercontent.com/93308960/145073234-08c90899-a67e-48e0-9684-c31bed3e3e39.png)
+
+
+![image](https://user-images.githubusercontent.com/93308960/145077502-2dee1508-c5d1-4b35-91e7-cec7417ab598.png)
+
+
+
+![image](https://user-images.githubusercontent.com/93308960/145077291-625c37a4-0c54-4f9d-9104-83b7c1e827ae.png)
+
+
+![image](https://user-images.githubusercontent.com/93308960/145079774-a0af2ddf-e9e4-4efc-90ac-a756b190d81d.png)
+
+
+![image](https://user-images.githubusercontent.com/93308960/145079811-d3bc5068-3d52-4ee8-9c9c-f323fba6943c.png)
+
+
+![image](https://user-images.githubusercontent.com/93308960/145080851-76fc8e23-f9f6-40aa-b990-f0c7dc64cb9d.png)
+
 
 
 ## d) Tee omalle miniprojektille weppisivu
