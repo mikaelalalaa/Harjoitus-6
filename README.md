@@ -26,7 +26,29 @@ sudo chmod ug+rwx /srv/salt/win
 
 [Windows Package Manager](https://docs.saltproject.io/en/latest/topics/windows/windows-package-manager.html)
 
+windowsin paketti manageri joka tarjoaa paketti managerin samankaltaisia kun `yum` ja `apt` linuxsissa. Saltstack on luonut windowsille oman GitHub repositoryn löytyy osoitteesta: (salt-winrepo-ng)[https://github.com/saltstack/salt-winrepo-ng]
 
+winrepo voi nopeasti ottaan käyttöön komennoilla
+
+*master*
+
+```
+salt-run winrepo.update_git_repos
+salt * pkg.refresh_db
+salt * pkg.install firefox_x64
+```
+
+*minion*
+
+```
+salt-call --local winrepo.update_git_repos
+salt-call --local pkg.refresh_db
+salt-call --local pkg.install firefox_x64
+```
+Konfiguraatio tiedosto löytyy
+
+* Linux masterilla: /srv/salt/win/repo-ng (salt://win/repo-ng)
+* ilman masteria: C:\salt\srv\salt\win\repo-ng (salt://win/repo-ng)
 
 ## a) Kerää tietoa Windowsista Saltilla.
 
