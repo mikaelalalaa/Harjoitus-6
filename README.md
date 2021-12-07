@@ -172,7 +172,7 @@ Mutta kuten alla olevasta kuvasta näkyy pystyn näkemään selaimesta sivuni
 
 ## d) Tee omalle miniprojektille weppisivu
 
-Linnki https://github.com/mikaelalalaa/Harjoitus-7
+Linnki miniprojektin pohjaan https://github.com/mikaelalalaa/Harjoitus-7
 
 
 ## lähteet 
