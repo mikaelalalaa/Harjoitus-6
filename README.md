@@ -128,16 +128,21 @@ Tallensin tiedoston ja ajoin komennon `sudo salt '*' state.apply allaps`, kuten 
 
 ![image](https://user-images.githubusercontent.com/93308960/145077291-625c37a4-0c54-4f9d-9104-83b7c1e827ae.png)
 
-Sitten loin uuden hakemiston `srv/salt/apache2`
+Sitten loin uuden hakemiston `srv/salt/apache2` johon loin init.sls tiedoston ja alla olevasta kuvasta näkyy mitä laitoin.
+
+Eli katsoin että apache on asennettu ja että se on käynnissä *(ensimmäinen ja vika rivi)*, sitten korvasin alkuperäsien index.html tiedoston omalla index.html tiedostolla *(toiseksi ylin)* ja yritin vielä saada palomuuriin reiän apache2 sovellukselle *(tokavika rivi)*.
 
 ![image](https://user-images.githubusercontent.com/93308960/145083899-86aeb9bc-c4f8-438c-b0ee-286a6ecca71c.png)
 
+Ajoin komennon `sudo salt '*' state.apply apache2`
 
 ![image](https://user-images.githubusercontent.com/93308960/145079774-a0af2ddf-e9e4-4efc-90ac-a756b190d81d.png)
 
 
 ![image](https://user-images.githubusercontent.com/93308960/145079811-d3bc5068-3d52-4ee8-9c9c-f323fba6943c.png)
 
+Kuten yllä olevista kuvistä näkyy kaikki muut muutokset onnistui paitsi palomuuri asetus, en vielä tällä hetkellä osannut korjaa asiaa.
+Mutta kuten alla olevasta kuvasta näkyy pystyn näkemään selaimesta sivuni
 
 ![image](https://user-images.githubusercontent.com/93308960/145080851-76fc8e23-f9f6-40aa-b990-f0c7dc64cb9d.png)
 
